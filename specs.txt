@@ -1,0 +1,15 @@
+Three-tiered user base:
+    * general public
+    * park managers, officials, and researchers
+    * data scientists
+
+Basic functionality specifications:
+    * locate closest parks using home address
+    * search for closest facility (trail, playground, etc.)
+    * display quality ratings
+    * accessible photo galleries of locations
+    * display features using icons
+
+Other Notes:
+    * Geo-coded park addresses would be useful.
+    * Use an image of the existing database to build initial presentation.
