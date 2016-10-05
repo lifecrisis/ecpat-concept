@@ -31,7 +31,7 @@
 
         <!-- Header and site brand. -->
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">eCPAT Concept</a>
+          <a class="navbar-brand" style="font-weight: bold;" href="#">eCPAT Concept</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling. -->
@@ -82,7 +82,7 @@
       <!-- Search jumbotron. -->
       <div class="jumbotron text-center" style="padding-top: 25px;">
         <h1 style="margin-top: 0; padding-bottom: 15px;">
-          Search for Parks!
+            <span class="glyphicon glyphicon-search" style="font-size: 75%;"></span> Search for Parks!
         </h1>
         <form action="">
           <input type="text"
@@ -97,16 +97,91 @@
         </form>
       </div> <!-- Search jumbotron. -->
 
-      <!-- Results header. -->
-      <h2>Results for search &quot;30901&quot;...
-          <span style="color: #900020;
-                       font-style: italic;
-                       text-decoration: underline;
-                       font-weight: bold;">12 parks</span>
-          found!
-      </h2>
+      <hr>
 
+      <!-- Main search results interface. -->
+      <div class="container" style="padding-bottom: 50px; padding-top: 15px;">
+        <div class="row">
+            <!-- Results filters. -->
+            <div class="col-md-3 well">
+                <div class="text-center">
+                  <img alt="map sample img" class="text-center" src="res/map.png" style="width: 100%; margin-left: auto; margin-right: auto;">
+                  <button type="button"
+                          class="btn btn-default"
+                          style="margin-top: 15px; width: 100%;">Navigate to Map View</button>
+                </div>
+                <form action="">
+                  <h2 style="font-style: italic; margin-top: 35px;">
+                      Filter parks by...
+                  </h2>
+                  <hr>
+                  <h3>Proximity:</h3>
+                    <div class="radio">
+                        <label><input type="radio">&nbsp;0.25 miles</input>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio">&nbsp;0.50 miles</input>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio">&nbsp;1 miles</input>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio">&nbsp;5 miles</input>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio">&nbsp;10 miles</input>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio">&nbsp;25 miles</input>
+                    </div>
+                  <hr>
+                  <h3>Activities:</h3>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="">&nbsp;Playground</label>
+                    </div>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="">&nbsp;Greenspace</label>
+                    </div>
+                   <div class="checkbox">
+                          <label><input type="checkbox" value="">&nbsp;Trails</label>
+                    </div>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="" >&nbsp;Sports Fields</label>
+                    </div>
+                  <hr>
+                  <h3>Amenities:</h3>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="">&nbsp;Picnic Tables and Shelter</label>
+                    </div>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="">&nbsp;Public Restrooms</label>
+                    </div>
+                   <div class="checkbox">
+                          <label><input type="checkbox" value="">&nbsp;Drinking Fountains</label>
+                    </div>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="" >&nbsp;Food and Vending</label>
+                    </div>
+                  <hr>
+                  <button type="button"
+                          class="btn btn-default"
+                          style="width: 100%;">Apply Search Filters</button>
+                </form>
+            </div>
+            <!-- Results. -->
+            <div class="col-md-9" style="padding-left: 25px; padding-top: 0;">
+              <!-- Results header. -->
+              <h2 style="padding-top: 0; margin-top: 0;">Results for search &quot;30901&quot;&nbsp;...&nbsp;
+                  <span style="font-style: italic;
+                               text-decoration: underline;
+                               font-weight: bold;">12 parks</span>
+                  found!
+              </h2><!-- Results header. -->
+            </div>
+        </div>
+      </div><!-- Main search results interface. -->
 
+      <!-- TODO: Put list of example results with a paginator at the bottom. -->
       <!-- TODO: Put a static footer at the bottom with copyright. -->
     </div> <!-- Main container. -->
 
