@@ -23,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body style="padding-top: 70px;">
+  <body style="padding-top: 85px;">
 
     <!-- Site navigation bar. -->
     <nav class="navbar navbar-fixed-top navbar-inverse">
@@ -76,8 +76,36 @@
       </div><!-- .container -->
     </nav>
     
-    <div class="container" style="background-color: green; height: 150px;">
-    </div>
+    <!-- Main container. -->
+    <div class="container">
+
+      <!-- Search jumbotron. -->
+      <div class="jumbotron text-center" style="padding-top: 25px;">
+        <h1 style="margin-top: 0; padding-bottom: 15px;">
+          Search for Parks!
+        </h1>
+        <form action="">
+          <input type="text"
+                 class="form-control"
+                 placeholder="Enter Zip Code (e.g. &quot;30452&quot;) ..."
+                 style="font-size: 150%; height: 150%;">
+          <button type="button"
+                  class="btn btn-default text-center"
+                  style="width: 200px; font-size: 150%; margin-top: 25px;">
+              Go!
+          </button>
+        </form>
+      </div> <!-- Search jumbotron. -->
+
+      <!-- Results header. -->
+      <h2>Results for search &quot;30901&quot;...
+          <span style="color: #900020; font-style: italic; font-weight: bold;">12 parks</span>
+          found!
+      </h2>
+
+
+      <!-- TODO: Put a static footer at the bottom with copyright. -->
+    </div> <!-- Main container. -->
 
     <!-- jQuery -->
     <script
