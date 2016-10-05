@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>eCPAT Concept Page</title>
+    <title>eCPAT Concept</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,11 +25,57 @@
 
   <body style="padding-top: 50px;">
 
+    <!-- Site navigation bar. -->
     <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-      </div>
-    </nav>
 
+        <!-- Header and site brand. -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">eCPAT Concept</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling. -->
+        <div class="collapse navbar-collapse"
+             id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">
+                <span class="glyphicon glyphicon-home"></span>&nbsp;
+                Home
+                <span class="sr-only">
+                    (current)
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-search"></span>&nbsp;
+                Search Parks
+              </a>
+            </li>
+            <li class="dropdown">
+                <a href="#"
+                   class="dropdown-toggle"
+                   data-toggle="dropdown"
+                   role="button">
+                     My Parks
+                     <span class="caret"></span>
+                </a>
+            </li>
+          </ul>
+
+          <!-- Sign in form. -->
+          <form action="" class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email">
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Sign In</button>
+          </form>
+        </div><!-- .navbar-collapse -->
+      </div><!-- .container -->
+    </nav>
+    
     <!-- jQuery -->
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
