@@ -81,7 +81,7 @@
 
       <!-- Search jumbotron. -->
       <div class="jumbotron text-center" style="padding-top: 25px;">
-        <h1 style="margin-top: 0; padding-bottom: 15px;">
+        <h1 style="margin-top: 0; padding-bottom: 15px; font-size: 45px;">
             <span class="glyphicon glyphicon-search" style="font-size: 75%;"></span> Search for Parks!
         </h1>
         <form action="">
@@ -97,7 +97,7 @@
         </form>
       </div> <!-- Search jumbotron. -->
 
-      <hr>
+      <hr></hr>
 
       <!-- Main search results interface. -->
       <div class="container" style="padding-bottom: 50px; padding-top: 15px;">
@@ -120,13 +120,7 @@
                   <hr>
                   <h3>Proximity:</h3>
                     <div class="radio">
-                        <label><input type="radio">&nbsp;0.25 miles</input>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio">&nbsp;0.50 miles</input>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio">&nbsp;1 miles</input>
+                        <label><input type="radio">&nbsp;1 mile</input>
                     </div>
                     <div class="radio">
                         <label><input type="radio">&nbsp;5 miles</input>
@@ -151,6 +145,9 @@
                     <div class="checkbox">
                           <label><input type="checkbox" value="" >&nbsp;Sports Fields</label>
                     </div>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="" >&nbsp;Fishing</label>
+                    </div>
                   <hr>
                   <h3>Amenities:</h3>
                     <div class="checkbox">
@@ -165,10 +162,21 @@
                     <div class="checkbox">
                           <label><input type="checkbox" value="" >&nbsp;Food and Vending</label>
                     </div>
+                    <div class="checkbox">
+                          <label><input type="checkbox" value="" >&nbsp;Campgrounds</label>
+                    </div>
                   <hr>
                   <button type="button"
                           class="btn btn-default"
-                          style="width: 100%;">Apply Search Filters</button>
+                          style="width: 100%;">
+                      <span class="glyphicon glyphicon-plus"></span>
+                      &nbsp;Additional Search Filters
+                  </button>
+                  <hr>
+                  <button type="button"
+                          class="btn btn-default"
+                          style="width: 100%;">Apply Search Filters
+                  </button>
                 </form>
             </div>
 
@@ -190,35 +198,45 @@
                               <img class="media-object"
                                    src="res/park1.jpeg"
                                    alt="park image #1"
-                                   style="height: 125px; width: 125px; border-radius: 5px;">
+                                   style="height: 200px; width: 200px; border-radius: 5px; margin-bottom: 20px;">
                               <div style="text-align: center;
-                                          font-size: 125%;
                                           color: black;
                                           margin-top: 8px;">
-                                <span class="label label-default" style="font-size: 100%;">
-                                <span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span style="font-weight: bold">1.1 miles</span>
-                                </span>
+                                <div class="label label-default" style="font-size: 200%;">
+                                    <span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span style="font-weight: bold">1.1 miles</span>
+                                </div>
                               </div>
                           </a>
                       </div>
                       <div class="media-body" style="padding-left: 15px;">
                           <h3 class="media-heading" style="font-weight: bold;">West County Park</h3>
-                          <hr></hr>
-                          <p style="font-style: italic;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip...
-                          </p>
+                          <table class="table table-striped table-bordered" style="margin-top: 25px;">
+                              <tr>
+                                  <th>Summary Attribute</th>
+                                  <th>Value</th>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Facilities</td>
+                                  <td>10</td>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Amenities</td>
+                                  <td>3</td>
+                              </tr>
+                              <tr>
+                                  <td>Park Quality Index</td>
+                                  <td><span class="badge">90%</span></td>
+                              </tr>
+                          </table>
                           <div class="text-center">
                           <div class="btn-group"  role="group" aria-label="..."
-                               style="padding-top: 10px;">
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                               style="padding-top: 5px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 7px;">
                                 <span class="glyphicon glyphicon-info-sign"></span> &nbsp;More Information</button>
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 7px;">
                                 <span class="glyphicon glyphicon-map-marker"></span> &nbsp;Get Directions</button>
                             <button type="button" class="btn btn-default">
-                                View Comments &nbsp;
+                                <span class="glyphicon glyphicon-comment"></span> &nbsp;View Comments &nbsp;
                                 <span class="badge" style="margin-top: 0; margin-bottom: 0;">14</span>
                             </button>
                           </div>
@@ -231,35 +249,45 @@
                               <img class="media-object"
                                    src="res/park2.jpeg"
                                    alt="park image #2"
-                                   style="height: 125px; width: 125px; border-radius: 5px;">
+                                   style="height: 200px; width: 200px; border-radius: 5px; margin-bottom: 20px;">
                               <div style="text-align: center;
-                                          font-size: 125%;
                                           color: black;
                                           margin-top: 8px;">
-                                <span class="label label-default" style="font-size: 100%;">
+                                <span class="label label-default" style="font-size: 200%;">
                                   <span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span style="font-weight: bold">2.2 miles</span>
                                 </span>
                               </div>
                           </a>
                       </div>
                       <div class="media-body" style="padding-left: 15px;">
-                          <h3 class="media-heading" style="font-weight: bold;">East County Park</h3>
-                          <hr></hr>
-                          <p style="font-style: italic;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip...
-                          </p>
+                          <h3 class="media-heading" style="font-weight: bold;">Easton Chapel Park</h3>
+                          <table class="table table-striped table-bordered" style="margin-top: 25px;">
+                              <tr>
+                                  <th>Summary Attribute</th>
+                                  <th>Value</th>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Facilities</td>
+                                  <td>7</td>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Amenities</td>
+                                  <td>6</td>
+                              </tr>
+                              <tr>
+                                  <td>Park Quality Index</td>
+                                  <td><span class="badge">95%</span></td>
+                              </tr>
+                          </table>
                           <div class="text-center">
                           <div class="btn-group"  role="group" aria-label="..."
                                style="padding-top: 10px;">
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 7px;">
                                 <span class="glyphicon glyphicon-info-sign"></span> &nbsp;More Information</button>
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 7px;">
                                 <span class="glyphicon glyphicon-map-marker"></span> &nbsp;Get Directions</button>
                             <button type="button" class="btn btn-default">
-                                View Comments &nbsp;
+                                <span class="glyphicon glyphicon-comment"></span> &nbsp;View Comments &nbsp;
                                 <span class="badge" style="margin-top: 0; margin-bottom: 0;">8</span>
                             </button>
                           </div>
@@ -272,12 +300,11 @@
                               <img class="media-object"
                                    src="res/park3.jpeg"
                                    alt="park image #1"
-                                   style="height: 125px; width: 125px; border-radius: 5px;">
+                                   style="height: 200px; width: 200px; border-radius: 5px; margin-bottom: 20px;">
                               <div style="text-align: center;
-                                          font-size: 125%;
                                           color: black;
                                           margin-top: 8px;">
-                                <span class="label label-default" style="font-size: 100%;">
+                                <span class="label label-default" style="font-size: 200%;">
                                   <span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span style="font-weight: bold">2.8 miles</span>
                                 </span>
                               </div>
@@ -285,22 +312,33 @@
                       </div>
                       <div class="media-body" style="padding-left: 15px;">
                           <h3 class="media-heading" style="font-weight: bold;">Sheffield Memorial Park</h3>
-                          <hr></hr>
-                          <p style="font-style: italic;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip...
-                          </p>
+                          <table class="table table-striped table-bordered" style="margin-top: 25px;">
+                              <tr>
+                                  <th>Summary Attribute</th>
+                                  <th>Value</th>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Facilities</td>
+                                  <td>10</td>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Amenities</td>
+                                  <td>4</td>
+                              </tr>
+                              <tr>
+                                  <td>Park Quality Index</td>
+                                  <td><span class="badge">88%</span></td>
+                              </tr>
+                          </table>
                           <div class="text-center">
                           <div class="btn-group"  role="group" aria-label="..."
                                style="padding-top: 10px;">
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 7px;">
                                 <span class="glyphicon glyphicon-info-sign"></span> &nbsp;More Information</button>
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 7px;">
                                 <span class="glyphicon glyphicon-map-marker"></span> &nbsp;Get Directions</button>
                             <button type="button" class="btn btn-default">
-                                View Comments &nbsp;
+                                <span class="glyphicon glyphicon-comment"></span> &nbsp;View Comments &nbsp;
                                 <span class="badge" style="margin-top: 0; margin-bottom: 0;">17</span>
                             </button>
                           </div>
@@ -313,12 +351,11 @@
                               <img class="media-object"
                                    src="res/park4.jpeg"
                                    alt="park image #1"
-                                   style="height: 125px; width: 125px; border-radius: 5px;">
+                                   style="height: 200px; width: 200px; border-radius: 5px; margin-bottom: 20px;">
                               <div style="text-align: center;
-                                          font-size: 125%;
                                           color: black;
                                           margin-top: 8px;">
-                                <span class="label label-default" style="font-size: 100%;">
+                                <span class="label label-default" style="font-size: 200%;">
                                   <span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span style="font-weight: bold">3.9 miles</span>
                                 </span>
                               </div>
@@ -326,13 +363,24 @@
                       </div>
                       <div class="media-body" style="padding-left: 15px;">
                           <h3 class="media-heading" style="font-weight: bold;">City Center Park</h3>
-                          <hr></hr>
-                          <p style="font-style: italic;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip...
-                          </p>
+                          <table class="table table-striped table-bordered" style="margin-top: 25px;">
+                              <tr>
+                                  <th>Summary Attribute</th>
+                                  <th>Value</th>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Facilities</td>
+                                  <td>14</td>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Amenities</td>
+                                  <td>3</td>
+                              </tr>
+                              <tr>
+                                  <td>Park Quality Index</td>
+                                  <td><span class="badge">87%</span></td>
+                              </tr>
+                          </table>
                           <div class="text-center">
                           <div class="btn-group"  role="group" aria-label="..."
                                style="padding-top: 10px;">
@@ -341,7 +389,7 @@
                             <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 7px;">
                                 <span class="glyphicon glyphicon-map-marker"></span> &nbsp;Get Directions</button>
                             <button type="button" class="btn btn-default">
-                                View Comments &nbsp;
+                                <span class="glyphicon glyphicon-comment"></span> &nbsp;View Comments &nbsp;
                                 <span class="badge" style="margin-top: 0; margin-bottom: 0;">2</span>
                             </button>
                           </div>
@@ -354,35 +402,45 @@
                               <img class="media-object"
                                    src="res/park5.jpeg"
                                    alt="park image #1"
-                                   style="height: 125px; width: 125px; border-radius: 5px;">
+                                   style="height: 200px; width: 200px; border-radius: 5px; margin-bottom: 20px;">
                               <div style="text-align: center;
-                                          font-size: 125%;
                                           color: black;
                                           margin-top: 8px;">
-                                <span class="label label-default" style="font-size: 100%;">
+                                <span class="label label-default" style="font-size: 200%;">
                                 <span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span style="font-weight: bold">7.3 miles</span>
                                 </span>
                               </div>
                           </a>
                       </div>
                       <div class="media-body" style="padding-left: 15px;">
-                          <h3 class="media-heading" style="font-weight: bold;">Final Example Park</h3>
-                          <hr></hr>
-                          <p style="font-style: italic;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip...
-                          </p>
+                          <h3 class="media-heading" style="font-weight: bold;">Dominion Community Park</h3>
+                          <table class="table table-striped table-bordered" style="margin-top: 25px;">
+                              <tr>
+                                  <th>Summary Attribute</th>
+                                  <th>Value</th>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Facilities</td>
+                                  <td>8</td>
+                              </tr>
+                              <tr>
+                                  <td>Total Park Amenities</td>
+                                  <td>5</td>
+                              </tr>
+                              <tr>
+                                  <td>Park Quality Index</td>
+                                  <td><span class="badge">93%</span></td>
+                              </tr>
+                          </table>
                           <div class="text-center">
                           <div class="btn-group"  role="group" aria-label="..."
                                style="padding-top: 10px;">
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 8px;">
                                 <span class="glyphicon glyphicon-info-sign"></span> &nbsp;More Information</button>
-                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 6px;">
+                            <button type="button" class="btn btn-default" style="padding-top: 7px; padding-bottom: 8px;">
                                 <span class="glyphicon glyphicon-map-marker"></span> &nbsp;Get Directions</button>
-                            <button type="button" class="btn btn-default">
-                                View Comments &nbsp;
+                            <button type="button" class="btn btn-default" style="padding-bottom: 7px;">
+                                <span class="glyphicon glyphicon-comment"></span> &nbsp;View Comments &nbsp;
                                 <span class="badge" style="margin-top: 0; margin-bottom: 0;">37</span>
                             </button>
                           </div>
@@ -415,11 +473,11 @@
 
     </div> <!-- Main container. -->
 
-    <nav class="navbar navbar-static-bottom navbar-inverse" style="width 100%; margin-bottom: 0;">
+    <nav class="navbar navbar-static-bottom navbar-inverse" style="border-radius:0; width 100%; margin-bottom: 0;">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                    &copy; &nbsp;<span style="font-weight: bold;">eCPAT Project</span>
+                    &copy; &nbsp;<span style="font-weight: bold;">eCPAT Project 2016</span>
                 </a>
             </div>
         </div>
